@@ -14,12 +14,14 @@ export interface DraggableBaseProps {
 export interface DraggableProps extends DraggableBaseProps {
   cc: number;
   children: React.ReactNode;
+  moreIcons?: (isMoving: boolean) => React.ReactNode;
 }
 
 export default function Draggable({
   id,
   inArmory = false,
   children,
+  moreIcons,
   cc,
 }: DraggableProps) {
   const dispatch = useDispatch();
@@ -54,6 +56,8 @@ export default function Draggable({
           &times;
         </span>
       )}
+
+      {moreIcons && moreIcons(transform != null)}
     </span>
   );
 }

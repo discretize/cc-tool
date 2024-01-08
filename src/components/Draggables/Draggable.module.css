@@ -42,3 +42,35 @@
     color: #747bff;
   }
 }
+
+.plus {
+  cursor: pointer;
+  color: var(--gw2-color-rarity-masterwork-main);
+
+  position: absolute;
+  bottom: -4px;
+  left: 8px;
+  user-select: none;
+
+  font-size: 20px;
+  line-height: 0;
+  &:hover {
+    color: var(--gw2-color-rarity-masterwork-light);
+  }
+}
+
+.minus {
+  cursor: pointer;
+  color: black;
+
+  position: absolute;
+  bottom: -4px;
+  left: 1px;
+  user-select: none;
+
+  font-size: 20px;
+  line-height: 0;
+  &:hover {
+    color: var(--gw2-color-rarity-rare-light);
+  }
+}

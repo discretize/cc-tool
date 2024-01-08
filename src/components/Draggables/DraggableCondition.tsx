@@ -3,6 +3,12 @@ import { ComponentProps } from "react";
 import { CC_CONDITIONS } from "../../data/ccskills";
 import Draggable, { DraggableBaseProps } from "./Draggable";
 import classes from "./Draggable.module.css";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  decrementDuration,
+  incrementDuration,
+  selectDurations,
+} from "../../state/ccSlice";
 
 export type ConditionTypes = ComponentProps<typeof Condition>["name"];
 
@@ -15,10 +21,40 @@ export default function DraggableCondition({
   gw2id,
   inArmory = false,
 }: DraggableConditionProps) {
-  const cc = CC_CONDITIONS[gw2id];
+  const dispatch = useDispatch();
+
+  const basecc = CC_CONDITIONS[gw2id].value;
+  const duration = useSelector(selectDurations(id));
+
+  const cc = basecc * duration;
+
+  function onIncrease() {
+    dispatch(incrementDuration(id));
+  }
+
+  function onDecrease() {
+    dispatch(decrementDuration(id));
+  }
 
   return (
-    <Draggable id={id} inArmory={inArmory} cc={cc.value}>
+    <Draggable
+      id={id}
+      inArmory={inArmory}
+      cc={cc}
+      moreIcons={(transform) =>
+        !transform &&
+        !inArmory && (
+          <>
+            <span className={classes.minus} onClick={onDecrease}>
+              -
+            </span>
+            <span className={classes.plus} onClick={onIncrease}>
+              +
+            </span>
+          </>
+        )
+      }
+    >
       <span
         className={classes.inner}
         style={{
@@ -32,7 +68,11 @@ export default function DraggableCondition({
           disableText
           style={{ fontSize: "20px", lineHeight: 0 }}
         />
-        <span className={classes.ccText}>{cc.value}/s</span>
+        {(cc >= 75 || inArmory) && (
+          <span className={classes.ccText}>
+            {cc}/{duration > 1 ? duration : ""}s
+          </span>
+        )}
       </span>
     </Draggable>
   );

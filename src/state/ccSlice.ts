@@ -11,16 +11,31 @@ export type StoredCC = {
 
 export interface CCState {
   skills: Record<string, StoredCC[]>;
+  durations: Record<string, number>;
 }
 
 const initialState: CCState = {
   skills: {},
+  durations: {},
 };
 
 export const ccSlice = createSlice({
   name: "cc",
   initialState,
   reducers: {
+    incrementDuration: (state, action: PayloadAction<string>) => {
+      state.durations[action.payload] =
+        (state.durations[action.payload] || 1) + 1;
+    },
+    decrementDuration: (state, action: PayloadAction<string>) => {
+      if (
+        !state.durations[action.payload] ||
+        state.durations[action.payload] <= 1
+      ) {
+        return;
+      }
+      state.durations[action.payload] = state.durations[action.payload] - 1;
+    },
     addCCSkill: (
       state,
       action: PayloadAction<StoredCC & { ccBar: string }>
@@ -63,7 +78,12 @@ export const ccSlice = createSlice({
 });
 
 // Action creators are generated for each case reducer function
-export const { addCCSkill, removeCCSkill } = ccSlice.actions;
+export const {
+  addCCSkill,
+  removeCCSkill,
+  incrementDuration,
+  decrementDuration,
+} = ccSlice.actions;
 
 export const selectIds = (bar: string) =>
   createSelector(
@@ -85,6 +105,11 @@ export const selectStored = (bar: string) =>
   createSelector(
     (state: { cc: CCState }) => state.cc.skills,
     (skills) => skills[bar] || []
+  );
+export const selectDurations = (id: string) =>
+  createSelector(
+    (state: { cc: CCState }) => state.cc.durations,
+    (durations) => durations[id] || 1
   );
 
 export default ccSlice.reducer;

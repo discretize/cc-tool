@@ -8,8 +8,6 @@ export interface DraggableGenericProps extends DraggableBaseProps {
 }
 
 export default function DraggableGeneric(props: DraggableGenericProps) {
-  console.log(props);
-
   if (props.type === "Skill") {
     const id = parseInt(props.gw2id as string);
     return <DraggableSkill {...props} gw2id={id} />;
