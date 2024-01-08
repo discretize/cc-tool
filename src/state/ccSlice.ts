@@ -6,7 +6,7 @@ export type StoredCC = {
   id: string;
   cc: number;
   type: DraggableTypes;
-  gw2id: number;
+  gw2id: unknown;
 };
 
 export interface CCState {

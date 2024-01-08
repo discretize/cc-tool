@@ -14,7 +14,7 @@ function CCBar({ label, id, size }: CCBarProps) {
   const currentIds = useSelector(selectStored(id));
   const currentCC = useSelector(selectCC(id));
 
-  const { isOver, setNodeRef } = useDroppable({
+  const { setNodeRef } = useDroppable({
     id,
   });
 
