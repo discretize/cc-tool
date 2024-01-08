@@ -32,16 +32,16 @@ function App() {
 
   return (
     <>
-      <h1>CC Calculator</h1>
+      <h1 className="mb-6">CC Calculator</h1>
 
       <SelectPreset />
 
       <DndContext onDragStart={handleDragStart} onDragEnd={handleDragEnd}>
-        <div style={{ display: "flex", gap: "1rem" }}>
+        <div className="flex gap-4 mt-8">
           <CCArmory />
 
           <div>
-            <h2>CC Bars to break</h2>
+            <h2 className="mb-4">CC Bars to break</h2>
             {bars.map((bar) => (
               <CCBar key={bar.id} {...bar} />
             ))}

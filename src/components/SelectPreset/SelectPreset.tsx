@@ -7,20 +7,28 @@ export default function SelectPreset() {
 
   function handleChange(event: React.ChangeEvent<HTMLSelectElement>) {
     const preset = event.target.value;
-    dispatch(setPreset(preset));
+    if (preset) dispatch(setPreset(preset));
   }
 
   return (
-    <div>
-      <label htmlFor="preset-select">Select a boss preset</label>
-      <select name="presets" id="preset-select" onChange={handleChange}>
-        <option>-- Select a preset --</option>
+    <label className="form-control w-full max-w-xs">
+      <div className="label">
+        <span className="label-text">Select a boss preset</span>
+      </div>
+      <select
+        className="select select-bordered"
+        onChange={handleChange}
+        defaultValue=""
+      >
+        <option value="" disabled>
+          -- Select a preset --
+        </option>
         {Object.keys(presets).map((preset) => (
           <option key={preset} value={preset}>
             {preset}
           </option>
         ))}
       </select>
-    </div>
+    </label>
   );
 }

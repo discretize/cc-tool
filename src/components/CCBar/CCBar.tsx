@@ -25,11 +25,13 @@ function CCBar({ label, id, size }: CCBarProps) {
       </div>
       <div
         style={{
-          minWidth: size + "px",
-          maxWidth: size + "px",
+          minWidth: size + 12 + "px",
+          maxWidth: size + 12 + "px",
         }}
         id={id}
-        className={classes.bar}
+        className={
+          classes.bar + " bg-zinc-500/70 border-zinc-900/80 border-2 p-1 h-16"
+        }
         ref={setNodeRef}
       >
         {currentIds.map((localProps) => (

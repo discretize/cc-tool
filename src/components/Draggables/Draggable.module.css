@@ -24,6 +24,7 @@
 .ccText {
   font-size: 22px;
   margin-left: 4px;
+  user-select: none;
 }
 
 .closeIcon {
@@ -31,11 +32,13 @@
   color: red;
 
   position: absolute;
-  top: -12px;
+  top: -14px;
   right: 0px;
+  user-select: none;
 
-  height: 8px;
-  width: 8px;
+  height: 12px;
+  width: 12px;
+  font-size: 20px;
 
   line-height: 0;
   &:hover {
@@ -48,7 +51,7 @@
   color: var(--gw2-color-rarity-masterwork-main);
 
   position: absolute;
-  bottom: -4px;
+  bottom: -8px;
   left: 8px;
   user-select: none;
 
@@ -64,7 +67,7 @@
   color: black;
 
   position: absolute;
-  bottom: -4px;
+  bottom: -8px;
   left: 1px;
   user-select: none;
 

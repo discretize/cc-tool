@@ -9,7 +9,7 @@ import style from "./CCArmory.module.css";
 export default function CCArmory() {
   return (
     <section>
-      <h2>Armory</h2>
+      <h2 className="mb-4">Armory</h2>
 
       <ul className={style.list}>
         {Object.keys(CC_SKILLS).map((id) => (
