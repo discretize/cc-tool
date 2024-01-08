@@ -1,5 +1,6 @@
 import { Condition } from "@discretize/gw2-ui-new";
 import { ComponentProps } from "react";
+import { DraggableTypes } from "../components/Draggables/Draggable";
 
 export const CC_SKILLS: Record<number, { value: number; profession: string }> =
   {
@@ -26,4 +27,16 @@ export const CC_CONDITIONS: Record<
   Blinded: { value: 20 },
   Weakness: { value: 20 },
   Crippled: { value: 20 },
+};
+
+export const getCCValue = (type: DraggableTypes, gw2id: unknown) => {
+  switch (type) {
+    case "Skill":
+      return CC_SKILLS[gw2id as number]?.value ?? 0;
+    case "Condition":
+      return (
+        CC_CONDITIONS[gw2id as ComponentProps<typeof Condition>["name"]]
+          ?.value ?? 0
+      );
+  }
 };

@@ -1,10 +1,10 @@
 import { createSelector, createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
 import { DraggableTypes } from "../components/Draggables/Draggable";
+import { getCCValue } from "../data/ccskills";
 
 export type StoredCC = {
   id: string;
-  cc: number;
   type: DraggableTypes;
   gw2id: unknown;
 };
@@ -47,7 +47,6 @@ export const ccSlice = createSlice({
 
       state.skills[action.payload.ccBar].push({
         id: action.payload.id,
-        cc: action.payload.cc,
         type: action.payload.type,
         gw2id: action.payload.gw2id,
       });
@@ -75,7 +74,11 @@ export const selectIds = (bar: string) =>
 export const selectCC = (bar: string) =>
   createSelector(
     (state: { cc: CCState }) => state.cc.skills,
-    (skills) => skills[bar]?.reduce((acc, skill) => acc + skill.cc, 0) || 0
+    (skills) =>
+      skills[bar]?.reduce(
+        (acc, skill) => acc + getCCValue(skill.type, skill.gw2id),
+        0
+      ) || 0
   );
 
 export const selectStored = (bar: string) =>

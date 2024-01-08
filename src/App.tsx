@@ -81,8 +81,7 @@ function App() {
     const type = (split[0].charAt(0).toUpperCase() +
       split[0].slice(1)) as DraggableTypes;
     const gw2id = split[1];
-    console.log(type);
-    dispatch(addCCSkill({ cc: 0, type, gw2id, id, ccBar: over.id.toString() }));
+    dispatch(addCCSkill({ type, gw2id, id, ccBar: over.id.toString() }));
   }
 }
 
