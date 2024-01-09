@@ -101,7 +101,7 @@ export const selectCC = (bar: string) =>
           getCCValue(skill.type, skill.gw2id) *
             (state.durations[skill.id] || 1),
         0
-      )
+      ) || 0
   );
 
 export const selectStored = (bar: string) =>
