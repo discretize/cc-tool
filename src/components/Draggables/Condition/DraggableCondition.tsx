@@ -8,6 +8,7 @@ import {
 import Condition, { ConditionTypes } from "./Condition";
 import Draggable, { DraggableBaseProps } from "../Draggable";
 import classes from "../Draggable.module.css";
+import { Fragment } from "react";
 
 export interface DraggableConditionProps extends DraggableBaseProps {
   gw2id: ConditionTypes;
@@ -38,19 +39,22 @@ export default function DraggableCondition({
       id={id}
       inArmory={inArmory}
       cc={cc}
-      moreIcons={(showIcons) =>
-        showIcons &&
-        !inArmory && (
-          <>
-            <span className={classes.minus} onClick={onDecrease}>
-              -
-            </span>
-            <span className={classes.plus} onClick={onIncrease}>
-              +
-            </span>
-          </>
-        )
-      }
+      moreIcons={(showIcons) => (
+        <>
+          <span
+            className={classes.minus + " " + (showIcons ? "visible" : "hidden")}
+            onClick={onDecrease}
+          >
+            -
+          </span>
+          <span
+            className={classes.plus + " " + (showIcons ? "visible" : "hidden")}
+            onClick={onIncrease}
+          >
+            +
+          </span>
+        </>
+      )}
     >
       <Condition gw2id={gw2id} id={id} inArmory={inArmory} />
     </Draggable>

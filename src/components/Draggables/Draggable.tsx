@@ -3,6 +3,7 @@ import { CSS } from "@dnd-kit/utilities";
 import { useDispatch } from "react-redux";
 import { removeCCSkill } from "../../state/ccSlice";
 import classes from "./Draggable.module.css";
+import { useEffect, useState } from "react";
 
 export type DraggableTypes = "Skill" | "Condition";
 
@@ -39,6 +40,13 @@ export default function Draggable({
     width: inArmory ? 100 : cc,
   };
 
+  const [showIcons, setShowIcons] = useState(false);
+  useEffect(() => {
+    if (inArmory) return;
+    if (transform != null) setShowIcons(false);
+    else setTimeout(() => setShowIcons(true), 500);
+  }, [transform, inArmory]);
+
   return (
     <span className={classes.root}>
       <span
@@ -51,13 +59,17 @@ export default function Draggable({
         {children}
       </span>
 
-      {!inArmory && transform == null && (
-        <span className={classes.closeIcon} onClick={handleClose}>
-          &times;
-        </span>
-      )}
-
-      {moreIcons && moreIcons(transform != null)}
+      <span
+        className={
+          classes.closeIcon +
+          " transition-all " +
+          (showIcons ? "visible" : "hidden")
+        }
+        onClick={handleClose}
+      >
+        &times;
+      </span>
+      {moreIcons && moreIcons(showIcons)}
     </span>
   );
 }
