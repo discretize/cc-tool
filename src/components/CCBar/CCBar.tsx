@@ -18,6 +18,8 @@ function CCBar({ label, id, size }: CCBarProps) {
     id,
   });
 
+  const isDone = currentCC >= size;
+
   return (
     <div className={classes.root}>
       <div>
@@ -30,7 +32,9 @@ function CCBar({ label, id, size }: CCBarProps) {
         }}
         id={id}
         className={
-          classes.bar + " bg-zinc-500/70 border-zinc-900/80 border-2 p-1 h-16"
+          classes.bar +
+          " border-zinc-900/80 border-2 p-1 h-16 " +
+          (!isDone ? "bg-red-900/30" : "bg-green-500/40") // " bg-zinc-500/70 "
         }
         ref={setNodeRef}
       >
