@@ -37,7 +37,7 @@ function App() {
       <SelectPreset />
 
       <DndContext onDragStart={handleDragStart} onDragEnd={handleDragEnd}>
-        <div className="flex gap-4 mt-8">
+        <div className="gap-4 mt-8">
           <CCArmory />
 
           <div>
