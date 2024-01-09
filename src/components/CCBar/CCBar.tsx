@@ -1,7 +1,7 @@
 import { useDroppable } from "@dnd-kit/core";
 import { useSelector } from "react-redux";
 import { selectCC, selectStored } from "../../state/ccSlice";
-import DraggableGeneric from "../Draggables/DraggableGeneric";
+import { DraggableGeneric } from "../Draggables/Generics";
 import classes from "./CCBar.module.css";
 
 export interface CCBarProps {

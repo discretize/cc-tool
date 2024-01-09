@@ -2,22 +2,23 @@ import { Condition } from "@discretize/gw2-ui-new";
 import { ComponentProps } from "react";
 import { DraggableTypes } from "../components/Draggables/Draggable";
 
-export const CC_SKILLS: Record<number, { value: number; profession: string }> =
-  {
-    9093: { value: 300, profession: "Guardian" }, // bane signet
-    9147: { value: 150, profession: "Guardian" }, // binding blade
-    9124: { value: 232, profession: "Guardian" }, // banish
+export type CCData = { value: number; profession: string };
 
-    30713: { value: 100, profession: "Engineer" }, // thunderclap
+export const CC_SKILLS: Record<number, CCData> = {
+  9093: { value: 300, profession: "Guardian" }, // bane signet
+  9147: { value: 150, profession: "Guardian" }, // binding blade
+  9124: { value: 232, profession: "Guardian" }, // banish
 
-    12511: { value: 150, profession: "Ranger" }, // point blank
-    12638: { value: 150, profession: "Ranger" }, // point blank
-  };
+  30713: { value: 100, profession: "Engineer" }, // thunderclap
+
+  12511: { value: 150, profession: "Ranger" }, // point blank
+  12638: { value: 150, profession: "Ranger" }, // point blank
+};
 
 // @ts-expect-error not all skills inflict cc
 export const CC_CONDITIONS: Record<
   ComponentProps<typeof Condition>["name"],
-  { value: number }
+  Omit<CCData, "profession">
 > = {
   Fear: { value: 100 },
   Taunt: { value: 75 },

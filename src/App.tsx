@@ -16,7 +16,7 @@ import "./App.css";
 import CCArmory from "./components/CCArmory/CCArmory";
 import CCBar, { CCBarProps } from "./components/CCBar/CCBar";
 import { DraggableTypes } from "./components/Draggables/Draggable";
-import DraggableGeneric from "./components/Draggables/DraggableGeneric";
+import { Generic } from "./components/Draggables/Generics";
 import SelectPreset from "./components/SelectPreset/SelectPreset";
 import { presets } from "./data/presets";
 import { addCCSkill, removeCCSkill } from "./state/ccSlice";
@@ -50,7 +50,7 @@ function App() {
 
         <DragOverlay>
           {activeId ? (
-            <DraggableGeneric
+            <Generic
               id={activeId.toString()}
               gw2id={activeId.toString().split("-")[1]}
               type={activeId.toString().split("-")[0] as DraggableTypes}

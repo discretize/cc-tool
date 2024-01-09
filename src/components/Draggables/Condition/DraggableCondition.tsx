@@ -1,16 +1,13 @@
-import { Condition } from "@discretize/gw2-ui-new";
-import { ComponentProps } from "react";
-import { CC_CONDITIONS } from "../../data/ccskills";
-import Draggable, { DraggableBaseProps } from "./Draggable";
-import classes from "./Draggable.module.css";
 import { useDispatch, useSelector } from "react-redux";
+import { CC_CONDITIONS } from "../../../data/ccskills";
 import {
   decrementDuration,
   incrementDuration,
   selectDurations,
-} from "../../state/ccSlice";
-
-export type ConditionTypes = ComponentProps<typeof Condition>["name"];
+} from "../../../state/ccSlice";
+import Condition, { ConditionTypes } from "./Condition";
+import Draggable, { DraggableBaseProps } from "../Draggable";
+import classes from "../Draggable.module.css";
 
 export interface DraggableConditionProps extends DraggableBaseProps {
   gw2id: ConditionTypes;
@@ -41,8 +38,8 @@ export default function DraggableCondition({
       id={id}
       inArmory={inArmory}
       cc={cc}
-      moreIcons={(transform) =>
-        !transform &&
+      moreIcons={(showIcons) =>
+        showIcons &&
         !inArmory && (
           <>
             <span className={classes.minus} onClick={onDecrease}>
@@ -55,25 +52,7 @@ export default function DraggableCondition({
         )
       }
     >
-      <span
-        className={classes.inner}
-        style={{
-          backgroundColor: `var(--gw2-color-effect-condition-dark)`,
-          border: `1px solid var(--gw2-color-effect-condition-main)`,
-        }}
-      >
-        <Condition
-          name={gw2id}
-          disableLink
-          disableText
-          style={{ fontSize: "20px", lineHeight: 0 }}
-        />
-        {(cc >= 75 || inArmory) && (
-          <span className={classes.ccText}>
-            {cc}/{duration > 1 ? duration : ""}s
-          </span>
-        )}
-      </span>
+      <Condition gw2id={gw2id} id={id} inArmory={inArmory} />
     </Draggable>
   );
 }

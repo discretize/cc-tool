@@ -1,8 +1,8 @@
-import { useDispatch } from "react-redux";
-import classes from "./Draggable.module.css";
-import { removeCCSkill } from "../../state/ccSlice";
 import { useDraggable } from "@dnd-kit/core";
 import { CSS } from "@dnd-kit/utilities";
+import { useDispatch } from "react-redux";
+import { removeCCSkill } from "../../state/ccSlice";
+import classes from "./Draggable.module.css";
 
 export type DraggableTypes = "Skill" | "Condition";
 
