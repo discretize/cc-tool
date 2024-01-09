@@ -19,7 +19,7 @@ import { DraggableTypes } from "./components/Draggables/Draggable";
 import { Generic } from "./components/Draggables/Generics";
 import SelectPreset from "./components/SelectPreset/SelectPreset";
 import { presets } from "./data/presets";
-import { addCCSkill, removeCCSkill } from "./state/ccSlice";
+import { addCCSkill, clearAll, removeCCSkill } from "./state/ccSlice";
 import { selectPreset } from "./state/settingsSlice";
 
 function App() {
@@ -29,6 +29,10 @@ function App() {
 
   const preset = useSelector(selectPreset);
   const bars: CCBarProps[] = preset ? presets[preset] : [];
+
+  function clearAllCC() {
+    dispatch(clearAll(bars.map((bar) => bar.id)));
+  }
 
   return (
     <>
@@ -41,7 +45,13 @@ function App() {
           <CCArmory />
 
           <div>
-            <h2 className="mb-4">CC Bars to break</h2>
+            <h2 className="mb-4">
+              CC Bars to break{" "}
+              <button className="btn btn-xs btn-warning" onClick={clearAllCC}>
+                Clear All
+              </button>
+            </h2>
+
             {bars.map((bar) => (
               <CCBar key={bar.id} {...bar} />
             ))}

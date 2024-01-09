@@ -23,6 +23,14 @@ export const ccSlice = createSlice({
   name: "cc",
   initialState,
   reducers: {
+    clearAll: (state, action: PayloadAction<string[]>) => {
+      action.payload.forEach((bar) => {
+        state.skills[bar]?.forEach((skill) => {
+          delete state.durations[skill.id];
+        });
+        state.skills[bar] = [];
+      });
+    },
     incrementDuration: (state, action: PayloadAction<string>) => {
       state.durations[action.payload] =
         (state.durations[action.payload] || 1) + 1;
@@ -79,6 +87,7 @@ export const ccSlice = createSlice({
 
 // Action creators are generated for each case reducer function
 export const {
+  clearAll,
   addCCSkill,
   removeCCSkill,
   incrementDuration,
