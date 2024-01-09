@@ -1,9 +1,11 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { presets } from "../../data/presets";
-import { setPreset } from "../../state/settingsSlice";
+import { selectPreset, setPreset } from "../../state/settingsSlice";
 
 export default function SelectPreset() {
   const dispatch = useDispatch();
+
+  const preset = useSelector(selectPreset);
 
   function handleChange(event: React.ChangeEvent<HTMLSelectElement>) {
     const preset = event.target.value;
@@ -18,7 +20,7 @@ export default function SelectPreset() {
       <select
         className="select select-bordered"
         onChange={handleChange}
-        defaultValue=""
+        defaultValue={preset ? preset : ""}
       >
         <option value="" disabled>
           -- Select a preset --

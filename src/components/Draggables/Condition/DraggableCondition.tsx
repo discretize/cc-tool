@@ -5,10 +5,9 @@ import {
   incrementDuration,
   selectDurations,
 } from "../../../state/ccSlice";
-import Condition, { ConditionTypes } from "./Condition";
 import Draggable, { DraggableBaseProps } from "../Draggable";
 import classes from "../Draggable.module.css";
-import { Fragment } from "react";
+import Condition, { ConditionTypes } from "./Condition";
 
 export interface DraggableConditionProps extends DraggableBaseProps {
   gw2id: ConditionTypes;
