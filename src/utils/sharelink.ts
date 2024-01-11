@@ -57,7 +57,7 @@ export function getState(b64state: string) {
     if (!line) {
       continue;
     }
-    const bar = presets[preset][i];
+    const bar = presets[preset][i - 1];
     cc.skills[bar.id] = [];
 
     const skillsInBar = line.split(",");
