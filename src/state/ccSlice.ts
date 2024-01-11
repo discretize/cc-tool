@@ -11,12 +11,12 @@ export type StoredCC = {
 
 export interface CCState {
   skills: Record<string, StoredCC[]>;
-  durations: Record<string, number>;
+  ticks: Record<string, number>;
 }
 
 const initialState: CCState = {
   skills: {},
-  durations: {},
+  ticks: {},
 };
 
 export const ccSlice = createSlice({
@@ -26,23 +26,19 @@ export const ccSlice = createSlice({
     clearAll: (state, action: PayloadAction<string[]>) => {
       action.payload.forEach((bar) => {
         state.skills[bar]?.forEach((skill) => {
-          delete state.durations[skill.id];
+          delete state.ticks[skill.id];
         });
         state.skills[bar] = [];
       });
     },
-    incrementDuration: (state, action: PayloadAction<string>) => {
-      state.durations[action.payload] =
-        (state.durations[action.payload] || 1) + 1;
+    incrementTicks: (state, action: PayloadAction<string>) => {
+      state.ticks[action.payload] = (state.ticks[action.payload] || 1) + 1;
     },
-    decrementDuration: (state, action: PayloadAction<string>) => {
-      if (
-        !state.durations[action.payload] ||
-        state.durations[action.payload] <= 1
-      ) {
+    decrementTicks: (state, action: PayloadAction<string>) => {
+      if (!state.ticks[action.payload] || state.ticks[action.payload] <= 1) {
         return;
       }
-      state.durations[action.payload] = state.durations[action.payload] - 1;
+      state.ticks[action.payload] = state.ticks[action.payload] - 1;
     },
     addCCSkill: (
       state,
@@ -90,8 +86,8 @@ export const {
   clearAll,
   addCCSkill,
   removeCCSkill,
-  incrementDuration,
-  decrementDuration,
+  incrementTicks,
+  decrementTicks,
 } = ccSlice.actions;
 
 export const selectIds = (bar: string) =>
@@ -107,8 +103,7 @@ export const selectCC = (bar: string) =>
       state.skills[bar]?.reduce(
         (acc, skill) =>
           acc +
-          getCCValue(skill.type, skill.gw2id) *
-            (state.durations[skill.id] || 1),
+          getCCValue(skill.type, skill.gw2id) * (state.ticks[skill.id] || 1),
         0
       ) || 0
   );
@@ -118,10 +113,10 @@ export const selectStored = (bar: string) =>
     (state: { cc: CCState }) => state.cc.skills,
     (skills) => skills[bar] || []
   );
-export const selectDurations = (id: string) =>
+export const selectTicks = (id: string) =>
   createSelector(
-    (state: { cc: CCState }) => state.cc.durations,
-    (durations) => durations[id] || 1
+    (state: { cc: CCState }) => state.cc.ticks,
+    (ticks) => ticks[id] || 1
   );
 
 export default ccSlice.reducer;

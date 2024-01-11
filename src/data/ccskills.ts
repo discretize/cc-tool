@@ -7,6 +7,7 @@ export type CCData = {
   profession?: string | "bundle";
   name?: string;
   id: unknown;
+  maxTicks?: number;
 };
 
 export const CC_SKILLS: Record<number, CCData> = {
@@ -46,6 +47,7 @@ export const CC_SKILLS: Record<number, CCData> = {
     profession: "revenant",
     id: 28978,
     cc: 150,
+    maxTicks: 9,
   },
   50410: {
     name: "Reckoning Blast",
@@ -250,7 +252,13 @@ export const CC_SKILLS: Record<number, CCData> = {
     cc: 200,
   },
   62511: { name: "Vile Blast", profession: "necromancer", id: 62511, cc: 100 },
-  9128: { name: "Sanctuary", profession: "guardian", id: 9128, cc: 150 },
+  9128: {
+    name: "Sanctuary",
+    profession: "guardian",
+    id: 9128,
+    cc: 150,
+    maxTicks: 5,
+  },
   9093: { name: "Bane Signet", profession: "guardian", id: 9093, cc: 300 },
   9125: { name: "Hammer of Wisdom", profession: "guardian", id: 9125, cc: 200 },
   62549: { name: "Heel Crack", profession: "guardian", id: 62549, cc: 200 },
@@ -271,6 +279,7 @@ export const CC_SKILLS: Record<number, CCData> = {
     profession: "revenant",
     id: 41220,
     cc: 100,
+    maxTicks: 6,
   },
   62878: { name: "Reaver's Rage", profession: "revenant", id: 62878, cc: 150 },
   14405: {

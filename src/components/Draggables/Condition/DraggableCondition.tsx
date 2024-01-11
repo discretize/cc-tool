@@ -1,12 +1,8 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { getCCValue } from "../../../data/ccskills";
-import {
-  decrementDuration,
-  incrementDuration,
-  selectDurations,
-} from "../../../state/ccSlice";
+import { selectTicks } from "../../../state/ccSlice";
 import Draggable, { DraggableBaseProps } from "../Draggable";
-import classes from "../Draggable.module.css";
+import TickHandling from "../TickHandling";
 import Condition, { ConditionTypes } from "./Condition";
 
 export interface DraggableConditionProps extends DraggableBaseProps {
@@ -18,42 +14,17 @@ export default function DraggableCondition({
   gw2id,
   inArmory = false,
 }: DraggableConditionProps) {
-  const dispatch = useDispatch();
-
   const basecc = getCCValue("Condition", gw2id);
-  const duration = useSelector(selectDurations(id));
+  const duration = useSelector(selectTicks(id));
 
   const cc = basecc * duration;
-
-  function onIncrease() {
-    dispatch(incrementDuration(id));
-  }
-
-  function onDecrease() {
-    dispatch(decrementDuration(id));
-  }
 
   return (
     <Draggable
       id={id}
       inArmory={inArmory}
       cc={cc}
-      moreIcons={(showIcons) => (
-        <>
-          <span
-            className={classes.minus + " " + (showIcons ? "visible" : "hidden")}
-            onClick={onDecrease}
-          >
-            -
-          </span>
-          <span
-            className={classes.plus + " " + (showIcons ? "visible" : "hidden")}
-            onClick={onIncrease}
-          >
-            +
-          </span>
-        </>
-      )}
+      moreIcons={(showIcons) => <TickHandling id={id} showIcons={showIcons} />}
     >
       <Condition gw2id={gw2id} id={id} inArmory={inArmory} />
     </Draggable>
