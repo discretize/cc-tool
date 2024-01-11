@@ -210,7 +210,7 @@ export const CC_SKILLS: Record<number, CCData> = {
     cc: 150,
   },
   62947: { name: "Wind Storm", profession: "elementalist", id: 62947, cc: 200 },
-  10229: { name: "Magic Bullet", profession: "mesmer", id: 10229, cc: 450 },
+  10229: { name: "Magic Bullet", profession: "mesmer", id: 10229, cc: 250 },
   10358: { name: "Counter Blade", profession: "mesmer", id: 10358, cc: 200 },
   10363: { name: "Into the Void", profession: "mesmer", id: 10363, cc: 150 },
   10189: { name: "Phantasmal Mage", profession: "mesmer", id: 10189, cc: 100 },
@@ -319,7 +319,7 @@ export const CC_SKILLS: Record<number, CCData> = {
   31248: { name: "Blast Gyro", profession: "engineer", id: 31248, cc: 300 },
   63253: { name: "Force Signet", profession: "engineer", id: 63253, cc: 150 },
   12598: { name: "Call Lightning", profession: "ranger", id: 12598, cc: 200 },
-  12476: { name: "Spike Trap", profession: "ranger", id: 12476, cc: 150 },
+  12476: { name: "Spike Trap", profession: "ranger", id: 12476, cc: 232 },
   31401: {
     name: "Glyph of Equality",
     profession: "ranger",
@@ -362,7 +362,7 @@ export const CC_SKILLS: Record<number, CCData> = {
     cc: 150,
   },
   30273: { name: "Dragon's Maw", profession: "guardian", id: 30273, cc: 150 },
-  62561: { name: "Heaven's Palm", profession: "guardian", id: 62561, cc: 550 },
+  62561: { name: "Heaven's Palm", profession: "guardian", id: 62561, cc: 400 },
   28406: { name: "Jade Winds", profession: "revenant", id: 28406, cc: 300 },
   27356: {
     name: "Energy Expulsion",
@@ -377,7 +377,7 @@ export const CC_SKILLS: Record<number, CCData> = {
     cc: 232,
   },
   30343: { name: "Head Butt", profession: "warrior", id: 30343, cc: 400 },
-  5868: { name: "Supply Crate", profession: "engineer", id: 5868, cc: 200 },
+  5868: { name: "Supply Crate", profession: "engineer", id: 5868, cc: 400 },
   42009: {
     name: "Prime Light Beam",
     profession: "engineer",
@@ -414,7 +414,7 @@ export const CC_SKILLS: Record<number, CCData> = {
     id: 29519,
     cc: 600,
   },
-  30359: { name: "Gravity Well", profession: "mesmer", id: 30359, cc: 350 },
+  30359: { name: "Gravity Well", profession: "mesmer", id: 30359, cc: 550 },
   10647: { name: "Charge", profession: "necromancer", id: 10647, cc: 332 },
   30105: {
     name: '"Chilled to the Bone!"',
@@ -436,7 +436,7 @@ export const CC_SKILLS: Record<number, CCData> = {
   29679: { name: "Skull Grinder", profession: "warrior", id: 29679, cc: 100 },
   31048: { name: "Wild Whirl", profession: "warrior", id: 31048, cc: 150 },
   44165: { name: "Full Counter", profession: "warrior", id: 44165, cc: 100 },
-  5813: { name: "Big Ol' Bomb", profession: "engineer", id: 5813, cc: 232 },
+  5813: { name: "Big Ol' Bomb", profession: "engineer", id: 5813, cc: 332 },
   5982: {
     name: "Launch Personal Battering Ram",
     profession: "engineer",
