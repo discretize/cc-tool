@@ -21,6 +21,7 @@ import SelectPreset from "./components/SelectPreset/SelectPreset";
 import { presets } from "./data/presets";
 import { addCCSkill, clearAll, removeCCSkill } from "./state/ccSlice";
 import { selectPreset } from "./state/settingsSlice";
+import SelectProfessions from "./components/SelectProfessions/SelectProfessions";
 
 function App() {
   const dispatch = useDispatch();
@@ -39,6 +40,7 @@ function App() {
       <h1 className="mb-6">CC Calculator</h1>
 
       <SelectPreset />
+      <SelectProfessions />
 
       <DndContext onDragStart={handleDragStart} onDragEnd={handleDragEnd}>
         <div className="gap-4 mt-8">

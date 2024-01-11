@@ -266,12 +266,6 @@ export const CC_SKILLS: Record<number, CCData> = {
     id: 27917,
     cc: 150,
   },
-  27917: {
-    name: "Call to Anguish",
-    profession: "revenant",
-    id: 27917,
-    cc: 150,
-  },
   41220: {
     name: "Darkrazor's Daring",
     profession: "revenant",
@@ -316,19 +310,12 @@ export const CC_SKILLS: Record<number, CCData> = {
   31248: { name: "Blast Gyro", profession: "engineer", id: 31248, cc: 300 },
   63253: { name: "Force Signet", profession: "engineer", id: 63253, cc: 150 },
   12598: { name: "Call Lightning", profession: "ranger", id: 12598, cc: 200 },
-  12476: { name: "Spike Trap", profession: "ranger", id: 12476, cc: 232 },
   12476: { name: "Spike Trap", profession: "ranger", id: 12476, cc: 150 },
   31401: {
     name: "Glyph of Equality",
     profession: "ranger",
     id: 31401,
     cc: 200,
-  },
-  29558: {
-    name: "Glyph of the Tides",
-    profession: "ranger",
-    id: 29558,
-    cc: 150,
   },
   29558: {
     name: "Glyph of the Tides",
@@ -381,7 +368,6 @@ export const CC_SKILLS: Record<number, CCData> = {
     cc: 232,
   },
   30343: { name: "Head Butt", profession: "warrior", id: 30343, cc: 400 },
-  5868: { name: "Supply Crate", profession: "engineer", id: 5868, cc: 200 },
   5868: { name: "Supply Crate", profession: "engineer", id: 5868, cc: 200 },
   42009: {
     name: "Prime Light Beam",
@@ -451,7 +437,6 @@ export const CC_SKILLS: Record<number, CCData> = {
   21661: { name: "Static Shock", profession: "engineer", id: 21661, cc: 200 },
   12462: { name: "Throw Vine", profession: "engineer", id: 12462, cc: 200 },
   29515: { name: "Toss Elixir X", profession: "engineer", id: 29515, cc: 300 },
-  29515: { name: "Toss Elixir X", profession: "engineer", id: 29515, cc: 300 },
   31167: {
     name: "Spare Capacitor",
     profession: "engineer",
@@ -466,7 +451,7 @@ export const CC_SKILLS: Record<number, CCData> = {
   },
   63050: { name: "Crash Down", profession: "engineer", id: 63050, cc: 232 },
   42894: { name: "Brutal Charge", profession: "ranger", id: 42894, cc: 200 },
-  42894: { name: "Brutal Charge", profession: "ranger", id: 42894, cc: 300 },
+  46432: { name: "Brutal Charge", profession: "ranger", id: 46432, cc: 300 },
   45743: { name: "Charge", profession: "ranger", id: 45743, cc: 200 },
   66258: { name: "Heavy Shot", profession: "ranger", id: 66258, cc: 200 },
   43375: { name: "Prelude Lash", profession: "ranger", id: 43375, cc: 150 },
