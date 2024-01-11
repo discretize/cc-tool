@@ -16,6 +16,7 @@ import {
 const persistConfig = {
   key: "root",
   storage,
+  version: 1,
 };
 
 const rootReducer = combineReducers({
