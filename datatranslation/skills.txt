@@ -1,0 +1,208 @@
+Guardian icon small.png  Shield of Absorption.png Shield of Absorption — Shield, Defiance Break: 150
+Guardian icon small.png  Pull (guardian skill).png Pull — Greatsword, Defiance Break: 150
+Guardian icon small.png  Banish.png Banish — Hammer, Defiance Break: 232
+Guardian icon small.png  Line of Warding.png Line of Warding — Staff, Defiance Break: 150
+Guardian icon small.png  Wrathful Grasp.png Wrathful Grasp — Spear, Defiance Break: 150
+Guardian icon small.png  Weight of Justice.png Weight of Justice — Trident, Defiance Break: 200
+Dragonhunter icon small.png  Deflecting Shot.png Deflecting Shot — Longbow, Defiance Break: 150
+Dragonhunter icon small.png  Hunter's Ward.png Hunter's Ward — Longbow, Defiance Break: 150
+Firebrand icon small.png  Blazing Edge.png Blazing Edge — Axe, Defiance Break: 150
+Revenant icon small.png  Temporal Rift.png Temporal Rift — Axe, Defiance Break: 150
+Revenant icon small.png  Drop the Hammer.png Drop the Hammer — Hammer, Defiance Break: 200
+Revenant icon small.png  Surge of the Mists.png Surge of the Mists — Staff, Defiance Break: 150
+Revenant icon small.png  Reckoning Blast.png Reckoning Blast — Trident, Defiance Break: 150
+Renegade icon small.png  Scorchrazor.png Scorchrazor — Short bow, Defiance Break: 200
+Warrior icon small.png  Pommel Bash.png Pommel Bash — Mace, Defiance Break: 100
+Warrior icon small.png  Tremor.png Tremor — Mace, Defiance Break: 300
+Warrior icon small.png  Shield Bash.png Shield Bash — Shield, Defiance Break: 200
+Warrior icon small.png  Backbreaker.png Backbreaker — Hammer, Defiance Break: 700
+Warrior icon small.png  Staggering Blow.png Staggering Blow — Hammer, Defiance Break: 150
+Warrior icon small.png  Smoldering Arrow.png Smoldering Arrow — Longbow, Defiance Break: 100
+Warrior icon small.png  Rifle Butt.png Rifle Butt — Rifle, Defiance Break: 150
+Warrior icon small.png  Barbed Pull.png Barbed Pull — Spear, Defiance Break: 150
+Warrior icon small.png  Repeating Shot.png Repeating Shot — Harpoon gun, Defiance Break: 150
+Spellbreaker icon small.png  Disrupting Stab.png Disrupting Stab — Dagger, Defiance Break: 250
+Engineer icon small.png  Magnetic Inversion.png Magnetic Inversion — Shield, Defiance Break: 150
+Engineer icon small.png  Static Shield.png Static Shield — Shield, Defiance Break: 100
+Engineer icon small.png  Throw Shield.png Throw Shield — Shield, Defiance Break: 100
+Engineer icon small.png  Overcharged Shot.png Overcharged Shot — Rifle, Defiance Break: 232
+Engineer icon small.png  Capture Line.png Capture Line — Harpoon gun, Defiance Break: 150
+Scrapper icon small.png  Thunderclap.png Thunderclap — Hammer, Defiance Break: 100
+Mechanist icon small.png  Rocket Fist Prototype.png Rocket Fist Prototype — Mace, Defiance Break: 100
+Ranger icon small.png  Path of Scars.png Path of Scars — Axe, Defiance Break: 150
+Ranger icon small.png  Call of the Wild.png Call of the Wild — Warhorn, Defiance Break: 200 
+Ranger icon small.png  Counterattack Kick.png Counterattack Kick — Greatsword, Defiance Break: 150
+Ranger icon small.png  Hilt Bash.png Hilt Bash — Greatsword, Defiance Break: 300
+Ranger icon small.png  Point-Blank Shot.png Point-Blank Shot — Longbow, Defiance Break: 300
+Ranger icon small.png  Concussion Shot.png Concussion Shot — Short bow, Defiance Break: 400
+Ranger icon small.png  Counterstrike.png Counterstrike — Spear, Defiance Break: 300
+Untamed icon small.png  Deft Strike.png Deft Strike — Sword, Defiance Break: 100
+Untamed icon small.png  Overbearing Smash.png Overbearing Smash — Hammer, Defiance Break: 225
+Untamed icon small.png  Thump (untamed).png Thump — Hammer, Defiance Break: 200
+Thief icon small.png  Headshot.png Head Shot — Pistol, Defiance Break: 200
+Thief icon small.png  Pistol Whip.png Pistol Whip — Sword, Defiance Break: 100
+Thief icon small.png  Tactical Strike.png Tactical Strike — Sword, Defiance Break: 200
+Thief icon small.png  Choking Gas.png Choking Gas — Short bow, Defiance Break: 100
+Thief icon small.png  Tow Line.png Tow Line — Spear, Defiance Break: 150
+Daredevil icon small.png  Hook Strike.png Hook Strike — Staff, Defiance Break: 400 
+Deadeye icon small.png  Malicious Tactical Strike.png Malicious Tactical Strike — Sword, Defiance Break: 200
+Deadeye icon small.png  Malicious Hook Strike.png Malicious Hook Strike — Staff, Defiance Break: 400 (in PvE)
+Elementalist icon small.png  Earthquake.png Earthquake — Dagger, when attuned to earth, Defiance Break: 200
+Elementalist icon small.png  Shocking Aura.png Shocking Aura — Dagger, when attuned to air, Defiance Break: 100
+Elementalist icon small.png  Transmute Lightning.png Transmute Lightning — Dagger, when attuned to air, Defiance Break: 100
+Elementalist icon small.png  Updraft.png Updraft — Dagger, when attuned to air, Defiance Break: 232
+Elementalist icon small.png  Comet.png Comet — Focus, when attuned to water, Defiance Break: 200
+Elementalist icon small.png  Gale.png Gale — Focus, when attuned to air, Defiance Break: 400 
+Elementalist icon small.png  Gust.png Gust — Staff, when attuned to air, Defiance Break: 150
+Elementalist icon small.png  Static Field.png Static Field — Staff, when attuned to air, Defiance Break: 200
+Elementalist icon small.png  Unsteady Ground.png Unsteady Ground — Staff, when attuned to earth, Defiance Break: 150
+Elementalist icon small.png  Air Bubble.png Air Bubble — Trident, when attuned to air, Defiance Break: 200
+Elementalist icon small.png  Electrocute.png Electrocute — Trident, when attuned to air, Defiance Break: 100
+Elementalist icon small.png  Lightning Cage.png Lightning Cage — Trident, when attuned to air, Defiance Break: 100
+Elementalist icon small.png  Rock Anchor.png Rock Anchor — Trident, when attuned to earth, Defiance Break: 200
+Tempest icon small.png  Cyclone.png Cyclone — Warhorn, when attuned to air, Defiance Break: 150
+Tempest icon small.png  Tidal Surge.png Tidal Surge — Warhorn, when attuned to water, Defiance Break: 150
+Weaver icon small.png  Katabatic Wind.png Katabatic Wind — Dagger, when attuned to air and water, Defiance Break: 150
+Weaver icon small.png  Mud Slide.png Mud Slide — Dagger, when attuned to water and earth, Defiance Break: 200
+Weaver icon small.png  Earthen Synergy.png Earthen Synergy — Scepter, when attuned to air and earth, Defiance Break: 150
+Weaver icon small.png  Gale Strike.png Gale Strike — Sword, when attuned to air and earth, Defiance Break: 200
+Weaver icon small.png  Polaric Leap.png Polaric Leap — Sword, when attuned to air, Defiance Break: 100
+Weaver icon small.png  Pile Driver.png Pile Driver — Staff, when attuned to air and earth, Defiance Break: 200
+Weaver icon small.png  Absolute Zero.png Absolute Zero — Trident, when attuned to air and water, Defiance Break: 100
+Catalyst icon small.png  Shock Blast.png Shock Blast — Hammer, when attuned to air, Defiance Break: 150
+Catalyst icon small.png  Wind Storm.png Wind Storm — Hammer, when attuned to air, Defiance Break: 200
+Mesmer icon small.png  Magic Bullet.png Magic Bullet — Pistol, Defiance Break: 450
+Mesmer icon small.png  Counter Blade.png Counter Blade — Sword, Defiance Break: 200
+Mesmer icon small.png  Vortex.png Into the Void — Focus, Defiance Break: 150
+Mesmer icon small.png  Phantasmal Mage.png Phantasmal Mage — Torch, Defiance Break: 100
+Mesmer icon small.png  Illusionary Wave.png Illusionary Wave — Greatsword, Defiance Break: 150
+Mesmer icon small.png  Chaos Storm.png Chaos Storm — Staff, Defiance Break: 100
+Mesmer icon small.png  Vortex.png Vortex — Spear, Defiance Break: 150
+Mesmer icon small.png  Illusion of Drowning.png Illusion of Drowning — Trident, Defiance Break: 200
+Chronomancer icon small.png  Tides of Time.png Tides of Time — Shield, Defiance Break: 100
+Mirage icon small.png  Phantom Razor.png Phantom Razor — Dagger, Defiance Break: 100
+Mirage icon small.png  Mirage Thrust.png Mirage Thrust — Sword, Defiance Break: 100
+Mirage icon small.png  Wave of Panic.png Wave of Panic — Trident, Defiance Break: 100
+Necromancer icon small.png  Deadly Catch.png Deadly Catch — Spear, Defiance Break: 150
+Necromancer icon small.png  Sinking Tomb.png Sinking Tomb — Trident, Defiance Break: 200
+Reaper icon small.png  Grasping Darkness.png Grasping Darkness — Greatsword, Defiance Break: 150
+Scourge icon small.png  Oppressive Collapse.png Oppressive Collapse — Torch, Defiance Break: 200
+Harbinger icon small.png  Vile Blast.png Vile Blast — Pistol, Defiance Break: 100 
+
+
+
+Guardian icon small.png  Sanctuary.png Sanctuary — Consecration, Defiance Break: 150
+Guardian icon small.png  Bane Signet.png Bane Signet — Signet, Defiance Break: 300
+Guardian icon small.png  Hammer of Wisdom.png Hammer of Wisdom — Spirit Weapon, Defiance Break: 200
+Willbender icon small.png  Heel Crack.png Heel Crack — Physical, Defiance Break: 200
+Willbender icon small.png  Quick Retribution.png Quick Retribution — Physical, Defiance Break: 300 
+Revenant icon small.png  Call to Anguish.png Call to Anguish — Legendary Demon Stance, Defiance Break: 150
+Revenant icon small.png  Call to Anguish.png Call to Anguish — Legendary Demon Stance, Defiance Break: 150
+Renegade icon small.png  Darkrazor's Daring.png Darkrazor's Daring — Legendary Renegade Stance, Defiance Break: 100
+Vindicator icon small.png  Reaver's Rage.png Reaver's Rage — Legendary Alliance Stance, Luxon, Defiance Break: 150
+Warrior icon small.png  Banner of Strength.png Banner of Strength — Banner, Defiance Break: 200
+Warrior icon small.png  Bull's Charge.png Bull's Charge — Physical, Defiance Break: 300
+Warrior icon small.png  Kick (warrior utility skill).png Kick — Physical, Defiance Break: 150
+Warrior icon small.png  Stomp.png Stomp — Physical, Defiance Break: 232
+Berserker icon small.png  Wild Blow.png Wild Blow — Rage, Defiance Break: 300
+Bladesworn icon small.png  Overcharged Cartridges.png Detonate Cartridges — Defiance Break: 232
+Engineer icon small.png  Throw Mine.png Deploy Mine — Gadget, Defiance Break: 200
+Engineer icon small.png  Detonate Mine Field.png Detonate — Defiance Break: 200 
+Engineer icon small.png  Personal Battering Ram.png Personal Battering Ram — Gadget, Defiance Break: 232
+Engineer icon small.png  Slick Shoes.png Slick Shoes — Gadget, Defiance Break: 200
+Engineer icon small.png  Throw Mine.png Throw Mine — Gadget, Defiance Break: 200
+Engineer icon small.png  Electrified Net.png Electrified Net — Defiance Break: 200
+Engineer icon small.png  Explosive Rockets.png Explosive Rockets — Defiance Break: 200
+Engineer icon small.png  Thump.png Thump — Defiance Break: 232
+Scrapper icon small.png  Blast Gyro.png Blast Gyro — Well, Defiance Break: 300 (in PvE)
+Mechanist icon small.png  Force Signet.png Force Signet — Signet, Defiance Break: 150
+Ranger icon small.png  Call Lightning (Ranger).png Call Lightning — Spirit, Defiance Break: 200
+Ranger icon small.png  Spike Trap.png Spike Trap — Trap, Defiance Break: 232
+Ranger icon small.png  Spike Trap.png Spike Trap — Trap, Defiance Break: 150
+Druid icon small.png  Glyph of Equality.png Glyph of Equality — Glyph, Defiance Break: 200
+Druid icon small.png  Glyph of the Tides (Celestial Avatar).png Glyph of the Tides — Glyph, Defiance Break: 150
+Druid icon small.png  Glyph of the Tides.png Glyph of the Tides — Glyph, Defiance Break: 150
+Untamed icon small.png  Exploding Spores.png Exploding Spores — Cantrip, Defiance Break: 200
+Thief icon small.png  Pitfall.png Pitfall — Defiance Break: 300
+Thief icon small.png  Seal Area.png Seal Area — Defiance Break: 150
+Thief icon small.png  Scorpion Wire.png Scorpion Wire — Trick, Defiance Break: 150
+Daredevil icon small.png  Distracting Daggers.png Distracting Daggers — Physical, Defiance Break: 100
+Daredevil icon small.png  Palm Strike.png Palm Strike — Physical, Defiance Break: 200
+Daredevil icon small.png  Reflexive Strike.png Reflexive Strike — Physical, Defiance Break: 200
+Deadeye icon small.png  Binding Shadow.png Binding Shadow — Cantrip, Defiance Break: 300
+Deadeye icon small.png  Shadow Gust.png Shadow Gust — Cantrip, Defiance Break: 382
+Specter icon small.png  Well of Silence.png Well of Silence — Well, Defiance Break: 200
+Mesmer icon small.png  Power Lock.png Power Lock — Defiance Break: 150 
+Mesmer icon small.png  Signet of Domination.png Signet of Domination — Signet, Defiance Break: 300
+Virtuoso icon small.png  Psychic Force.png Psychic Force — Psionic, Defiance Break: 150
+Necromancer icon small.png  Spectral Grasp.png Spectral Grasp — Spectral, Defiance Break: 150
+
+Dragonhunter icon small.png  Dragon's Maw.png Dragon's Maw — Trap, Defiance Break: 150
+Willbender icon small.png  Heaven's Palm.png Heaven's Palm — Physical, Defiance Break: 550
+Revenant icon small.png  Jade Winds.png Jade Winds — Legendary Assassin Stance, Defiance Break: 300
+Revenant icon small.png  Energy Expulsion.png Energy Expulsion — Legendary Centaur Stance, Defiance Break: 300
+Herald icon small.png  Chaotic Release.png Chaotic Release — Legendary Dragon Stance, Consume, Defiance Break: 232
+Berserker icon small.png  Head Butt.png Head Butt — Rage, Defiance Break: 400
+Engineer icon small.png  Supply Crate.png Supply Crate — Turret, Defiance Break: 200
+Engineer icon small.png  Supply Crate.png Supply Crate — Turret, Defiance Break: 200
+Holosmith icon small.png  Prime Light Beam.png Prime Light Beam — Exceed, Defiance Break: 232
+Thief icon small.png  Basilisk Venom.png Basilisk Venom — Venom, Defiance Break: 150
+Daredevil icon small.png  Impact Strike.png Impact Strike — Physical, Defiance Break: 200
+Daredevil icon small.png  Uppercut (Daredevil skill).png Uppercut — Defiance Break: 232
+Specter icon small.png  Shadowfall.png Shadowfall — Well, Defiance Break: 300
+Elementalist icon small.png  Tornado.png Tornado — Cantrip, Defiance Break: 232
+Elementalist icon small.png  Whirlpool.png Whirlpool — Cantrip, Defiance Break: 150
+Elementalist icon small.png  Crashing Waves.png Crashing Waves — Defiance Break: 150
+Elementalist icon small.png  Shocking Bolt.png Shocking Bolt — Defiance Break: 150
+Weaver icon small.png  Tailored Victory.png Tailored Victory — Defiance Break: 250
+Mesmer icon small.png  Signet of Humility.png Signet of Humility — Signet, Defiance Break: 600
+Chronomancer icon small.png  Gravity Well.png Gravity Well — Well, Defiance Break: 350
+Necromancer icon small.png  Charge (necromancer skill).png Charge — Defiance Break: 332
+Reaper icon small.png  "Chilled to the Bone!".png "Chilled to the Bone!" — Shout, Defiance Break: 500 (in PvE)
+
+Dragonhunter icon small.png  Judgment (skill).png Hunter's Verdict — Defiance Break: 150
+Warrior icon small.png  Earthshaker.png Earthshaker — Burst, Hammer, Defiance Break: 450
+Warrior icon small.png  Skull Crack.png Skull Crack — Burst, Mace, Defiance Break: 600
+Warrior icon small.png  Whirling Strike.png Whirling Strike — Burst, Spear, Defiance Break: 450
+Berserker icon small.png  Gun Flame.png Gun Flame — Primal Burst, Rifle, Defiance Break: 100
+Berserker icon small.png  Rupturing Smash.png Rupturing Smash — Primal Burst, Hammer, Defiance Break: 100
+Berserker icon small.png  Skull Grinder.png Skull Grinder — Primal Burst, Mace, Defiance Break: 100
+Berserker icon small.png  Wild Whirl.png Wild Whirl — Primal Burst, Spear, Defiance Break: 150
+Spellbreaker icon small.png  Full Counter.png Full Counter — Burst, Defiance Break: 100 
+Engineer icon small.png  Big Ol' Bomb.png Big Ol' Bomb — Tool belt, Bomb Kit, Defiance Break: 232
+Engineer icon small.png  Launch Personal Battering Ram.png Launch Personal Battering Ram — Tool belt, Personal Battering Ram, Defiance Break: 100
+Engineer icon small.png  Static Shock.png Static Shock — Tool belt, A.E.D., Defiance Break: 200
+Engineer icon small.png  Throw Vine.png Throw Vine — Tool belt, Seed Turret, Defiance Break: 200
+Engineer icon small.png  Toss Elixir X.png Toss Elixir X — Elixir, Tool belt, Elixir X, Defiance Break: 300
+Engineer icon small.png  Toss Elixir X.png Toss Elixir X — Elixir, Tool belt, Elixir X (underwater), Defiance Break: 300
+Scrapper icon small.png  Spare Capacitor.png Spare Capacitor — Tool belt, Shredder Gyro, Defiance Break: 200
+Holosmith icon small.png  Prismatic Singularity.png Prismatic Singularity — Tool belt, Hard Light Arena, Defiance Break: 150
+Mechanist icon small.png  Core Reactor Shot.png Core Reactor Shot — Tool belt, Mech Command, Defiance Break: 232
+Mechanist icon small.png  Crash Down.png Crash Down — Defiance Break: 232
+Mechanist icon small.png  Jade Mortar.png Jade Mortar — Tool belt, Mech Command, Defiance Break: 100
+Mechanist icon small.png  Sky Circus.png Sky Circus — Tool belt, Mech Command, Defiance Break: 232
+Soulbeast icon small.png  Brutal Charge (canine).png Brutal Charge — Defiance Break: 200
+Soulbeast icon small.png  Brutal Charge (porcine).png Brutal Charge — Defiance Break: 300
+Soulbeast icon small.png  Charge (gazelle).png Charge — Defiance Break: 200
+Soulbeast icon small.png  Turtle Siege.png Heavy Shot — Defiance Break: 200
+Soulbeast icon small.png  Prelude Lash.png Prelude Lash — Beast, Defiance Break: 150
+Soulbeast icon small.png  Slam (turtle).png Slam — Defiance Break: 232
+Soulbeast icon small.png  Tail Lash.png Tail Lash — Defiance Break: 150
+Soulbeast icon small.png  Wing Buffet.png Wing Buffet — Defiance Break: 232
+Thief icon small.png  Bone Crack.png Bone Crack — Stolen skill, Defiance Break: 200
+Thief icon small.png  Branch Bash.png Branch Bash — Stolen skill, Defiance Break: 150
+Thief icon small.png  Club Shock Wave.png Club Shock Wave — Stolen skill, Defiance Break: 200
+Thief icon small.png  Mace Head Crack.png Mace Head Crack — Stolen skill, Defiance Break: 300
+Thief icon small.png  Shoot Rifle.png Shoot Rifle — Stolen skill, Defiance Break: 382
+Thief icon small.png  Fire Snowball.png Throw Enchanted Ice — Stolen skill, Defiance Break: 232
+Thief icon small.png  Throw Gear.png Throw Gear — Stolen skill, Defiance Break: 200
+Thief icon small.png  Throw Magnetic Bomb.png Throw Magnetic Bomb — Stolen skill, Defiance Break: 150
+Thief icon small.png  Throw Boulder.png Throw Rock — Stolen skill, Defiance Break: 200
+Thief icon small.png  Throw Boulder.png Throw Rock — Stolen skill, Defiance Break: 200
+Thief icon small.png  Throw Unstable Reagent.png Throw Unstable Reagent — Stolen skill, Defiance Break: 150
+Thief icon small.png  Use Staff.png Use Scepter — Stolen skill, Defiance Break: 200
+Thief icon small.png  Use Staff.png Use Staff — Stolen skill, Defiance Break: 100
+Thief icon small.png  Use Staff.png Use Trident — Stolen skill, Defiance Break: 150
+Mesmer icon small.png  Diversion.png Diversion — Shatter, Defiance Break: 100
+Chronomancer icon small.png  Time Sink.png Time Sink — Shatter, Defiance Break: 100
+Virtuoso icon small.png  Bladesong Dissonance.png Bladesong Dissonance — Bladesong, Defiance Break: 100

@@ -1,7 +1,7 @@
 import { Condition as Gw2Condi } from "@discretize/gw2-ui-new";
 import { ComponentProps } from "react";
 import { useSelector } from "react-redux";
-import { CC_CONDITIONS } from "../../../data/ccskills";
+import { getCCValue } from "../../../data/ccskills";
 import { selectDurations } from "../../../state/ccSlice";
 import classes from "../Draggable.module.css";
 import { DraggableConditionProps } from "./DraggableCondition";
@@ -13,7 +13,7 @@ export default function Condition({
   gw2id,
   inArmory,
 }: DraggableConditionProps) {
-  const basecc = CC_CONDITIONS[gw2id].value;
+  const basecc = getCCValue("Condition", gw2id);
   const duration = useSelector(selectDurations(id));
 
   const cc = basecc * duration;

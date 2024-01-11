@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { CC_CONDITIONS } from "../../../data/ccskills";
+import { getCCValue } from "../../../data/ccskills";
 import {
   decrementDuration,
   incrementDuration,
@@ -20,7 +20,7 @@ export default function DraggableCondition({
 }: DraggableConditionProps) {
   const dispatch = useDispatch();
 
-  const basecc = CC_CONDITIONS[gw2id].value;
+  const basecc = getCCValue("Condition", gw2id);
   const duration = useSelector(selectDurations(id));
 
   const cc = basecc * duration;
