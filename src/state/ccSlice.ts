@@ -23,6 +23,10 @@ export const ccSlice = createSlice({
   name: "cc",
   initialState,
   reducers: {
+    setState: (state, action: PayloadAction<CCState>) => {
+      state.skills = action.payload.skills;
+      state.ticks = action.payload.ticks;
+    },
     clearAll: (state, action: PayloadAction<string[]>) => {
       action.payload.forEach((bar) => {
         state.skills[bar]?.forEach((skill) => {
@@ -88,6 +92,7 @@ export const {
   removeCCSkill,
   incrementTicks,
   decrementTicks,
+  setState,
 } = ccSlice.actions;
 
 export const selectIds = (bar: string) =>

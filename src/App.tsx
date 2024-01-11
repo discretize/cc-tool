@@ -10,7 +10,7 @@ import "@discretize/gw2-ui-new/dist/default_style.css";
 import "@discretize/gw2-ui-new/dist/index.css";
 import "@discretize/typeface-menomonia";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "./App.css";
 import CCArmory from "./components/CCArmory/CCArmory";
@@ -19,20 +19,46 @@ import { DraggableTypes } from "./components/Draggables/Draggable";
 import { Generic } from "./components/Draggables/Generics";
 import SelectPreset from "./components/SelectPreset/SelectPreset";
 import { presets } from "./data/presets";
-import { addCCSkill, clearAll, removeCCSkill } from "./state/ccSlice";
-import { selectPreset } from "./state/settingsSlice";
+import {
+  addCCSkill,
+  clearAll,
+  removeCCSkill,
+  setState as setCCState,
+} from "./state/ccSlice";
+import {
+  selectPreset,
+  setState as setSettingsState,
+} from "./state/settingsSlice";
 import SelectProfessions from "./components/SelectProfessions/SelectProfessions";
+import { getShareLink, getState } from "./utils/sharelink";
 
 function App() {
   const dispatch = useDispatch();
 
   const [activeId, setActiveId] = useState<UniqueIdentifier | null>(null);
-
+  const state = useSelector((state) => state);
   const preset = useSelector(selectPreset);
   const bars: CCBarProps[] = preset ? presets[preset] : [];
 
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+
+    if (params.has("s")) {
+      const { cc, settings } = getState(params.get("s") as string);
+      dispatch(setCCState(cc));
+      dispatch(setSettingsState(settings));
+    }
+  }, [dispatch]);
+
   function clearAllCC() {
     dispatch(clearAll(bars.map((bar) => bar.id)));
+  }
+
+  function onClickShare() {
+    const link = getShareLink(state);
+
+    history.pushState(null, "", "?s=" + link);
+    navigator.clipboard.writeText(window.location.href);
   }
 
   return (
@@ -51,6 +77,9 @@ function App() {
               CC Bars to break{" "}
               <button className="btn btn-xs btn-warning" onClick={clearAllCC}>
                 Clear All
+              </button>
+              <button className="btn btn-xs btn-info" onClick={onClickShare}>
+                Share
               </button>
             </h2>
 

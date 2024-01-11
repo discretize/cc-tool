@@ -14,6 +14,10 @@ export const settingsSlice = createSlice({
   name: "settings",
   initialState,
   reducers: {
+    setState: (state, action: PayloadAction<SettingsState>) => {
+      state.preset = action.payload.preset;
+      state.professions = action.payload.professions;
+    },
     setPreset: (state, action: PayloadAction<string | null>) => {
       state.preset = action.payload;
     },
@@ -28,7 +32,7 @@ export const settingsSlice = createSlice({
   },
 });
 
-export const { setPreset, addProfession, removeProfession } =
+export const { setPreset, addProfession, removeProfession, setState } =
   settingsSlice.actions;
 
 export const selectPreset = (state: { settings: SettingsState }) =>
