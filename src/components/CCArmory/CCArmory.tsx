@@ -14,7 +14,7 @@ export default function CCArmory() {
     <>
       <h2 className="mb-4">Armory</h2>
 
-      <section className="mb-8 overflow-auto">
+      <section className="mb-8 overflow-auto sticky top-0" style={{backgroundColor: "oklch(0.279963 0.010163 260.705)"}}>
         {Object.keys(CC_SKILLS_BY_PROFESSION)
           .filter((prof) =>
             professions.length == 0
