@@ -11,6 +11,7 @@ export type CCData = {
 };
 
 export const CC_SKILLS: Record<number, CCData> = {
+  // 12815: { name: "Lightning Leap Combo", id: 12815, cc: 100 },
   9091: {
     name: "Shield of Absorption",
     profession: "guardian",
@@ -40,7 +41,7 @@ export const CC_SKILLS: Record<number, CCData> = {
     name: "Drop the Hammer",
     profession: "revenant",
     id: 28110,
-    cc: 200,
+    cc: 300,
   },
   28978: {
     name: "Surge of the Mists",
@@ -96,9 +97,9 @@ export const CC_SKILLS: Record<number, CCData> = {
     id: 12523,
     cc: 150,
   },
-  12475: { name: "Hilt Bash", profession: "ranger", id: 12475, cc: 300 },
-  12511: { name: "Point-Blank Shot", profession: "ranger", id: 12511, cc: 300 },
-  12508: { name: "Concussion Shot", profession: "ranger", id: 12508, cc: 400 },
+  12475: { name: "Hilt Bash", profession: "ranger", id: 12475, cc: 150 },
+  12511: { name: "Point-Blank Shot", profession: "ranger", id: 12511, cc: 150 },
+  12508: { name: "Concussion Shot", profession: "ranger", id: 12508, cc: 200 },
   12561: { name: "Counterstrike", profession: "ranger", id: 12561, cc: 300 },
   63336: { name: "Deft Strike", profession: "ranger", id: 63336, cc: 100 },
   63075: {
@@ -360,8 +361,9 @@ export const CC_SKILLS: Record<number, CCData> = {
     profession: "necromancer",
     id: 10620,
     cc: 150,
+    maxTicks: 5, // multihit
   },
-  30273: { name: "Dragon's Maw", profession: "guardian", id: 30273, cc: 150 },
+  30273: { name: "Dragon's Maw", profession: "guardian", id: 30273, cc: 300 },
   62561: { name: "Heaven's Palm", profession: "guardian", id: 62561, cc: 400 },
   28406: { name: "Jade Winds", profession: "revenant", id: 28406, cc: 300 },
   27356: {
@@ -474,6 +476,13 @@ export const CC_SKILLS: Record<number, CCData> = {
     profession: "mesmer",
     id: 62602,
     cc: 100,
+  },
+  62563: {
+    name: "Vital Draw",
+    profession: "necromancer",
+    id: 62563,
+    cc: 100,
+    maxTicks: 3,
   },
 };
 

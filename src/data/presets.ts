@@ -26,16 +26,16 @@ export const presets: Record<string, CCBarProps[]> = {
 
     { id: "artsariiv-p2", label: "Phase 2", size: 2100 },
 
-    { id: "artsariiv-split2-c1", label: "Split 2 - Northwest", size: 350 },
-    { id: "artsariiv-split2-c2", label: "Split 2 - North", size: 350 },
-    { id: "artsariiv-split2-c3", label: "Split 2 - Northeast", size: 350 },
-    { id: "artsariiv-split2-c4", label: "Split 2 - East", size: 350 },
+    { id: "artsariiv-split2-c1", label: "Split 2 - Northwest", size: 340 },
+    { id: "artsariiv-split2-c2", label: "Split 2 - North", size: 340 },
+    { id: "artsariiv-split2-c3", label: "Split 2 - Northeast", size: 340 },
+    { id: "artsariiv-split2-c4", label: "Split 2 - East", size: 340 },
 
-    { id: "artsariiv-split2-c5", label: "Split 2 - Southeast", size: 350 },
-    { id: "artsariiv-split2-c6", label: "Split 2 - South", size: 350 },
+    { id: "artsariiv-split2-c5", label: "Split 2 - Southeast", size: 340 },
+    { id: "artsariiv-split2-c6", label: "Split 2 - South", size: 340 },
 
-    { id: "artsariiv-split2-c7", label: "Split 2 - Southwest", size: 350 },
-    { id: "artsariiv-split2-c8", label: "Split 2 - West", size: 350 },
+    { id: "artsariiv-split2-c7", label: "Split 2 - Southwest", size: 340 },
+    { id: "artsariiv-split2-c8", label: "Split 2 - West", size: 340 },
 
     { id: "artsariiv-p3", label: "Phase 3", size: 2100 },
   ],
