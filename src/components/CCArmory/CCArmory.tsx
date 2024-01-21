@@ -27,7 +27,7 @@ export default function CCArmory() {
           .map((profession) => (
             <ul key={profession} className={style.list + " flex gap-1"}>
               {CC_SKILLS_BY_PROFESSION[profession].map((skill) => (
-                <li key={skill.id as string}>
+                <li key={`${skill.id}`}>
                   <DraggableSkill
                     id={"Skill-" + skill.id + "-" + generateRandomString(10)}
                     gw2id={skill.id as number}

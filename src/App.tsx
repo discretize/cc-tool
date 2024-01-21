@@ -18,6 +18,7 @@ import CCBar, { CCBarProps } from "./components/CCBar/CCBar";
 import { DraggableTypes } from "./components/Draggables/Draggable";
 import { Generic } from "./components/Draggables/Generics";
 import SelectPreset from "./components/SelectPreset/SelectPreset";
+import SelectProfessions from "./components/SelectProfessions/SelectProfessions";
 import { presets } from "./data/presets";
 import {
   addCCSkill,
@@ -29,14 +30,13 @@ import {
   selectPreset,
   setState as setSettingsState,
 } from "./state/settingsSlice";
-import SelectProfessions from "./components/SelectProfessions/SelectProfessions";
+import { store } from "./state/store";
 import { getShareLink, getState } from "./utils/sharelink";
 
 function App() {
   const dispatch = useDispatch();
 
   const [activeId, setActiveId] = useState<UniqueIdentifier | null>(null);
-  const state = useSelector((state) => state);
   const preset = useSelector(selectPreset);
   const bars: CCBarProps[] = preset ? presets[preset] : [];
 
@@ -44,9 +44,13 @@ function App() {
     const params = new URLSearchParams(window.location.search);
 
     if (params.has("s")) {
-      const { cc, settings } = getState(params.get("s") as string);
-      dispatch(setCCState(cc));
-      dispatch(setSettingsState(settings));
+      try {
+        const { cc, settings } = getState(params.get("s") as string);
+        dispatch(setCCState(cc));
+        dispatch(setSettingsState(settings));
+      } catch (e) {
+        console.error(e);
+      }
     }
   }, [dispatch]);
 
@@ -55,7 +59,7 @@ function App() {
   }
 
   function onClickShare() {
-    const link = getShareLink(state);
+    const link = getShareLink(store.getState());
 
     history.pushState(null, "", "?s=" + link);
     navigator.clipboard.writeText(window.location.href);

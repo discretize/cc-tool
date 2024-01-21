@@ -19,6 +19,10 @@ export default function Skill({ gw2id, id }: SkillProps) {
   // @ts-expect-error
   const data = skilldata[`${gw2id}`];
 
+  if (!data) {
+    return <span>Unknown skill {gw2id}</span>;
+  }
+
   return (
     <span
       className={classes.inner}
